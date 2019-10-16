@@ -1,4 +1,3 @@
-package com.cd;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -8,8 +7,7 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class AppTest 
-    extends TestCase
-{
+    extends TestCase {
     /**
      * Create the test case
      *
@@ -31,16 +29,43 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void test_assertion1()
+    public void testApp()
     {
         assertTrue( true );
+	try
+	{
+	    Thread.sleep(60000);
+	}
+	catch(InterruptedException ex)
+	{
+	    Thread.currentThread().interrupt();
+	}
     }
-	public void test_assertion2()
+	
+	public void testApp2()
     {
+		
         assertTrue( true );
+	try
+	{
+	    Thread.sleep(60000);
+	}
+	catch(InterruptedException ex)
+	{
+	    Thread.currentThread().interrupt();
+	}
+	
     }
-	public void test_assertion3()
+	public void testApp3()
     {
         assertTrue( true );
+	try
+	{
+	    Thread.sleep(60000);
+	}
+	catch(InterruptedException ex)
+	{
+	    Thread.currentThread().interrupt();
+	}
     }
 }
